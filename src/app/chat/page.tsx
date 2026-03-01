@@ -157,7 +157,7 @@ export default function ChatPage() {
                   </AvatarFallback>
                 </Avatar>
                 <div
-                  className={`rounded-lg px-4 py-3 max-w-[80%] ${
+                  className={`rounded-lg px-6 py-3 max-w-[80%] ${
                     msg.role === "user"
                       ? "bg-primary text-primary-foreground"
                       : "bg-muted"
@@ -174,7 +174,7 @@ export default function ChatPage() {
                     <Bot className="h-4 w-4" />
                   </AvatarFallback>
                 </Avatar>
-                <div className="bg-muted rounded-lg px-4 py-3">
+                <div className="bg-muted rounded-lg px-6 py-3">
                   <div className="flex gap-1">
                     <span className="h-2 w-2 bg-muted-foreground/40 rounded-full animate-bounce [animation-delay:-0.3s]" />
                     <span className="h-2 w-2 bg-muted-foreground/40 rounded-full animate-bounce [animation-delay:-0.15s]" />

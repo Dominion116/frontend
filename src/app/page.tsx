@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DarkModeToggle } from "@/components/dark-mode-toggle";
 import {
-  DollarSign,
   PiggyBank,
   BarChart3,
   MessageSquare,
@@ -22,7 +21,6 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
-              <DollarSign className="h-8 w-8 text-primary" />
               <span className="text-2xl font-bold font-serif">FinBot</span>
             </div>
             <div className="flex items-center gap-2">
@@ -269,7 +267,6 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
-              <DollarSign className="h-6 w-6 text-primary" />
               <span className="text-xl font-bold font-serif">FinBot</span>
             </div>
             <div className="flex gap-8 text-sm text-muted-foreground">

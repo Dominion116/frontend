@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/select";
 import { DarkModeToggle } from "@/components/dark-mode-toggle";
 import { Separator } from "@/components/ui/separator";
-import { Send, DollarSign, Bot, User } from "lucide-react";
+import { Send, Bot, User } from "lucide-react";
 import { Sidebar } from "@/components/chat/sidebar";
 import {
   sendMessage,
@@ -109,9 +109,6 @@ export default function ChatPage() {
         {/* Chat Header */}
         <div className="border-b px-6 py-3 flex items-center justify-between bg-background">
           <div className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-full bg-primary flex items-center justify-center">
-              <DollarSign className="h-5 w-5 text-primary-foreground" />
-            </div>
             <div>
               <h1 className="font-semibold text-lg font-serif">FinBot</h1>
               <p className="text-xs text-muted-foreground">Your personal finance assistant</p>

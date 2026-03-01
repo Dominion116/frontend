@@ -133,7 +133,7 @@ export default function ChatPage() {
 
         {/* Messages */}
         <ScrollArea className="flex-1 py-4">
-          <div className="max-w-3xl mx-auto space-y-6 px-6">
+          <div className="space-y-6 px-6">
             {messages.map((msg, i) => (
               <div
                 key={i}
@@ -191,7 +191,7 @@ export default function ChatPage() {
 
         {/* Input */}
         <div className="px-6 py-4 bg-background">
-          <div className="max-w-3xl mx-auto flex gap-3">
+          <div className="flex gap-3">
             <Input
               value={input}
               onChange={(e) => setInput(e.target.value)}

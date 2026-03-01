@@ -47,7 +47,7 @@ export default function LandingPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
             Log expenses in plain English, track budgets effortlessly, and get
-            personalized advice — all through a simple chat interface powered by AI.
+            personalized advice. All through a simple chat interface powered by AI.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/chat">
@@ -73,7 +73,7 @@ export default function LandingPage() {
               Everything You Need to Manage Your Money
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Just chat naturally — FinBot handles the rest.
+              Just chat naturally. FinBot handles the rest.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -87,7 +87,7 @@ export default function LandingPage() {
               <CardContent>
                 <p className="text-muted-foreground">
                   Say &ldquo;Spent $45 on groceries&rdquo; and FinBot logs it instantly.
-                  No forms, no menus — just natural language.
+                  No forms, no menus. Just natural language.
                 </p>
               </CardContent>
             </Card>
@@ -132,7 +132,7 @@ export default function LandingPage() {
               <CardContent>
                 <p className="text-muted-foreground">
                   Get personalized, non-judgmental tips based on your actual
-                  spending patterns — not generic advice.
+                  spending patterns, not generic advice.
                 </p>
               </CardContent>
             </Card>
@@ -184,7 +184,7 @@ export default function LandingPage() {
                 </div>
                 <p className="text-muted-foreground mb-4">
                   &ldquo;The budget alerts are a game-changer. FinBot warned me I was
-                  overspending on dining out — gently, not judgmentally. That&apos;s exactly what I needed.&rdquo;
+                  overspending on dining out, gently and without judgment. That&apos;s exactly what I needed.&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
@@ -248,8 +248,8 @@ export default function LandingPage() {
             Ready to Take Control?
           </h2>
           <p className="text-lg opacity-90 mb-8 max-w-xl mx-auto">
-            Start chatting with FinBot today. No credit card required, no complex setup —
-            just smart money management.
+            Start chatting with FinBot today. No credit card required, no complex
+            setup. Just smart money management.
           </p>
           <Link href="/chat">
             <Button

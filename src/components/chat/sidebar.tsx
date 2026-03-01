@@ -23,7 +23,6 @@ export function Sidebar({ financeContext }: SidebarProps) {
     return (
       <div className="p-4 h-full flex flex-col">
         <div className="flex items-center gap-2 mb-6 px-2">
-          <DollarSign className="h-6 w-6 text-primary" />
           <span className="text-xl font-bold font-serif">FinBot</span>
         </div>
         <div className="flex-1 flex items-center justify-center">
@@ -43,7 +42,6 @@ export function Sidebar({ financeContext }: SidebarProps) {
       <div className="p-4 space-y-6">
         {/* Logo */}
         <div className="flex items-center gap-2 px-2">
-          <DollarSign className="h-6 w-6 text-primary" />
           <span className="text-xl font-bold">FinBot</span>
         </div>
 

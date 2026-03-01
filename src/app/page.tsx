@@ -15,14 +15,14 @@ import {
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background font-sans">
       {/* Navbar */}
       <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
               <DollarSign className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold">FinBot</span>
+              <span className="text-2xl font-bold font-serif">FinBot</span>
             </div>
             <Link href="/chat">
               <Button>Get Started</Button>
@@ -37,7 +37,7 @@ export default function LandingPage() {
           <Badge variant="secondary" className="mb-4 text-sm px-4 py-1">
             AI-Powered Finance Assistant
           </Badge>
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-6 font-serif">
             Take Control of Your
             <span className="text-primary block mt-2">Financial Future</span>
           </h1>
@@ -65,7 +65,7 @@ export default function LandingPage() {
       <section id="features" className="py-20 bg-muted/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-serif">
               Everything You Need to Manage Your Money
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -140,7 +140,7 @@ export default function LandingPage() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-serif">
               Loved by People Who Love Their Money
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -240,7 +240,7 @@ export default function LandingPage() {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <Shield className="h-12 w-12 mx-auto mb-6 opacity-80" />
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-serif">
             Ready to Take Control?
           </h2>
           <p className="text-lg opacity-90 mb-8 max-w-xl mx-auto">
@@ -266,7 +266,7 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
               <DollarSign className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold">FinBot</span>
+              <span className="text-xl font-bold font-serif">FinBot</span>
             </div>
             <div className="flex gap-8 text-sm text-muted-foreground">
               <a href="#features" className="hover:text-foreground transition-colors">Features</a>

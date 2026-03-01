@@ -97,9 +97,9 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="flex h-screen bg-background">
+    <div className="flex h-screen bg-background font-sans">
       {/* Sidebar */}
-      <div className="w-80 border-r bg-muted/30 flex-shrink-0 hidden md:block">
+      <div className="w-80 border-r bg-sidebar flex-shrink-0 hidden md:block">
         <Sidebar financeContext={financeContext} />
       </div>
 
@@ -112,7 +112,7 @@ export default function ChatPage() {
               <DollarSign className="h-5 w-5 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="font-semibold text-lg">FinBot</h1>
+              <h1 className="font-semibold text-lg font-serif">FinBot</h1>
               <p className="text-xs text-muted-foreground">Your personal finance assistant</p>
             </div>
           </div>

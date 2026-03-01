@@ -24,7 +24,7 @@ export function Sidebar({ financeContext }: SidebarProps) {
       <div className="p-4 h-full flex flex-col">
         <div className="flex items-center gap-2 mb-6 px-2">
           <DollarSign className="h-6 w-6 text-primary" />
-          <span className="text-xl font-bold">FinBot</span>
+          <span className="text-xl font-bold font-serif">FinBot</span>
         </div>
         <div className="flex-1 flex items-center justify-center">
           <p className="text-sm text-muted-foreground text-center px-4">
@@ -57,8 +57,8 @@ export function Sidebar({ financeContext }: SidebarProps) {
           <div className="grid grid-cols-1 gap-2">
             <Card className="border-0 shadow-none bg-background">
               <CardContent className="p-3 flex items-center gap-3">
-                <div className="h-8 w-8 rounded-md bg-green-100 flex items-center justify-center">
-                  <Wallet className="h-4 w-4 text-green-600" />
+                <div className="h-8 w-8 rounded-md bg-accent flex items-center justify-center">
+                  <Wallet className="h-4 w-4 text-primary" />
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Monthly Income</p>
@@ -68,8 +68,8 @@ export function Sidebar({ financeContext }: SidebarProps) {
             </Card>
             <Card className="border-0 shadow-none bg-background">
               <CardContent className="p-3 flex items-center gap-3">
-                <div className="h-8 w-8 rounded-md bg-blue-100 flex items-center justify-center">
-                  <TrendingDown className="h-4 w-4 text-blue-600" />
+                <div className="h-8 w-8 rounded-md bg-secondary flex items-center justify-center">
+                  <TrendingDown className="h-4 w-4 text-secondary-foreground" />
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Total Spent</p>
@@ -79,12 +79,12 @@ export function Sidebar({ financeContext }: SidebarProps) {
             </Card>
             <Card className="border-0 shadow-none bg-background">
               <CardContent className="p-3 flex items-center gap-3">
-                <div className={`h-8 w-8 rounded-md flex items-center justify-center ${remainingBudget >= 0 ? 'bg-emerald-100' : 'bg-red-100'}`}>
-                  <DollarSign className={`h-4 w-4 ${remainingBudget >= 0 ? 'text-emerald-600' : 'text-red-600'}`} />
+                <div className={`h-8 w-8 rounded-md flex items-center justify-center ${remainingBudget >= 0 ? 'bg-accent' : 'bg-destructive/10'}`}>
+                  <DollarSign className={`h-4 w-4 ${remainingBudget >= 0 ? 'text-primary' : 'text-destructive'}`} />
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground">Remaining Budget</p>
-                  <p className={`font-semibold text-sm ${remainingBudget < 0 ? 'text-red-600' : ''}`}>
+                  <p className={`font-semibold text-sm ${remainingBudget < 0 ? 'text-destructive' : ''}`}>
                     ${Math.abs(remainingBudget).toLocaleString()}
                     {remainingBudget < 0 && ' over'}
                   </p>
@@ -128,7 +128,7 @@ export function Sidebar({ financeContext }: SidebarProps) {
                           </Badge>
                         )}
                         {isNearBudget && (
-                          <Badge variant="secondary" className="text-[10px] px-1.5 py-0 bg-yellow-100 text-yellow-700">
+                          <Badge variant="secondary" className="text-[10px] px-1.5 py-0 bg-chart-2/20 text-chart-2">
                             Close
                           </Badge>
                         )}
@@ -138,10 +138,10 @@ export function Sidebar({ financeContext }: SidebarProps) {
                       value={percentage}
                       className={`h-2 ${
                         isOverBudget
-                          ? "[&>div]:bg-red-500"
+                          ? "[&>div]:bg-destructive"
                           : isNearBudget
-                          ? "[&>div]:bg-yellow-500"
-                          : "[&>div]:bg-emerald-500"
+                          ? "[&>div]:bg-chart-2"
+                          : "[&>div]:bg-primary"
                       }`}
                     />
                   </div>

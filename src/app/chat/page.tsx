@@ -12,6 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { DarkModeToggle } from "@/components/dark-mode-toggle";
 import { Separator } from "@/components/ui/separator";
 import { Send, DollarSign, Bot, User } from "lucide-react";
 import { Sidebar } from "@/components/chat/sidebar";
@@ -117,6 +118,7 @@ export default function ChatPage() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <DarkModeToggle />
             <span className="text-sm text-muted-foreground">Tone:</span>
             <Select value={tone} onValueChange={setTone}>
               <SelectTrigger className="w-[160px]">

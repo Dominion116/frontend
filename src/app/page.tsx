@@ -24,9 +24,12 @@ export default function LandingPage() {
               <DollarSign className="h-8 w-8 text-primary" />
               <span className="text-2xl font-bold font-serif">FinBot</span>
             </div>
-            <Link href="/chat">
-              <Button>Get Started</Button>
-            </Link>
+            <div className="flex items-center gap-2">
+              <DarkModeToggle />
+              <Link href="/chat">
+                <Button>Get Started</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

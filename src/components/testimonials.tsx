@@ -109,8 +109,8 @@ const TestimonialCard = ({
   testimonial: (typeof testimonials)[number];
 }) => (
   <div className="mb-8 rounded-xl bg-accent px-6 py-8 sm:py-6">
-    <div className="flex items-center justify-between gap-20">
-      <div className="relative hidden aspect-3/4 w-full max-w-[18rem] shrink-0 rounded-xl overflow-hidden md:block">
+    <div className="flex items-center justify-between gap-10 md:gap-20">
+      <div className="relative hidden h-[280px] w-[210px] shrink-0 rounded-xl overflow-hidden md:block">
         <Image
           src={testimonial.image}
           alt={testimonial.name}

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DarkModeToggle } from "@/components/dark-mode-toggle";
+import Testimonials from "@/components/testimonials";
 import {
   PiggyBank,
   BarChart3,
@@ -11,7 +11,6 @@ import {
   ArrowRight,
   ArrowUpRight,
   CirclePlay,
-  Star,
   TrendingUp,
   Shield,
 } from "lucide-react";
@@ -140,90 +139,13 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Testimonials / Social Proof */}
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* Stats */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-serif">
-              Loved by People Who Love Their Money
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Join thousands already taking control of their finances.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border shadow-sm">
-              <CardContent className="pt-6">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  &ldquo;I never tracked expenses before because it was too tedious. With FinBot,
-                  I just type what I spent and it&apos;s done. Saved $400 in my first month!&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-sm font-semibold">SK</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm">Sarah K.</p>
-                    <p className="text-xs text-muted-foreground">Freelance Designer</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border shadow-sm">
-              <CardContent className="pt-6">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  &ldquo;The budget alerts are a game-changer. FinBot warned me I was
-                  overspending on dining out, gently and without judgment. That&apos;s exactly what I needed.&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-sm font-semibold">MR</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm">Marcus R.</p>
-                    <p className="text-xs text-muted-foreground">Software Engineer</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border shadow-sm">
-              <CardContent className="pt-6">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  &ldquo;I set a savings goal for a vacation and FinBot kept me motivated
-                  every step of the way. Hit my target two weeks early!&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-sm font-semibold">JL</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm">Jessica L.</p>
-                    <p className="text-xs text-muted-foreground">Marketing Manager</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Stats */}
-          <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             <div>
               <p className="text-4xl font-bold text-primary">10,000+</p>
               <p className="text-muted-foreground mt-1">Active Users</p>

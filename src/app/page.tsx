@@ -39,15 +39,14 @@ export default function LandingPage() {
       <section className="flex min-h-[calc(100vh-4rem)] items-center justify-center">
         <div className="mx-auto grid w-full max-w-7xl gap-12 px-6 py-12 lg:grid-cols-2">
           <div>
-            <Badge
-              asChild
-              className="rounded-full border-border py-1"
-              variant="secondary"
-            >
-              <Link href="#">
+            <Link href="#">
+              <Badge
+                className="rounded-full border-border py-1"
+                variant="secondary"
+              >
                 AI-Powered Finance Assistant <ArrowUpRight className="ml-1 size-4" />
-              </Link>
-            </Badge>
+              </Badge>
+            </Link>
             <h1 className="mt-6 max-w-[17ch] font-semibold text-4xl leading-[1.2]! tracking-[-0.035em] font-serif md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem]">
               Take Control of Your{" "}
               <span className="text-primary">Financial Future</span>

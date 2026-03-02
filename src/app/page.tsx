@@ -174,7 +174,8 @@ export default function LandingPage() {
             <Link href="/chat">
               <Button
                 size="lg"
-                className="text-base bg-white text-primary hover:bg-white/90"
+                variant="secondary"
+                className="text-base"
               >
                 Get Started Now
                 <ArrowUpRight className="ml-2 h-5 w-5" />

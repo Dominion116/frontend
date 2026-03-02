@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DarkModeToggle } from "@/components/dark-mode-toggle";
 import {
@@ -87,76 +87,55 @@ export default function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 bg-muted/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-serif">
-              Everything You Need to Manage Your Money
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Just chat naturally. FinBot handles the rest.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="border-0 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <MessageSquare className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="text-xl">Expense Logging</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Say &ldquo;Spent $45 on groceries&rdquo; and FinBot logs it instantly.
-                  No forms, no menus. Just natural language.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <BarChart3 className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="text-xl">Budget Tracking</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Set budgets per category and get friendly alerts when
-                  you&apos;re close to exceeding them.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <PiggyBank className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="text-xl">Savings Goals</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Define goals, track contributions, and celebrate milestones
-                  on your journey to financial freedom.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <TrendingUp className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="text-xl">AI Advice</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Get personalized, non-judgmental tips based on your actual
-                  spending patterns, not generic advice.
-                </p>
-              </CardContent>
-            </Card>
+      <section id="features" className="flex min-h-screen items-center justify-center py-12 bg-muted/50">
+        <div>
+          <h2 className="text-center font-semibold text-4xl tracking-tight font-serif sm:text-5xl">
+            Everything You Need to Manage Your Money
+          </h2>
+          <p className="mt-4 text-center text-lg text-muted-foreground max-w-2xl mx-auto">
+            Just chat naturally. FinBot handles the rest.
+          </p>
+          <div className="mx-auto mt-10 grid max-w-7xl gap-6 px-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="flex flex-col rounded-xl border px-5 py-6">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                <MessageSquare className="size-5 text-primary" />
+              </div>
+              <span className="font-semibold text-lg">Expense Logging</span>
+              <p className="mt-1 text-[15px] text-foreground/80">
+                Say &ldquo;Spent $45 on groceries&rdquo; and FinBot logs it instantly.
+                No forms, no menus. Just natural language.
+              </p>
+            </div>
+            <div className="flex flex-col rounded-xl border px-5 py-6">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                <BarChart3 className="size-5 text-primary" />
+              </div>
+              <span className="font-semibold text-lg">Budget Tracking</span>
+              <p className="mt-1 text-[15px] text-foreground/80">
+                Set budgets per category and get friendly alerts when
+                you&apos;re close to exceeding them.
+              </p>
+            </div>
+            <div className="flex flex-col rounded-xl border px-5 py-6">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                <PiggyBank className="size-5 text-primary" />
+              </div>
+              <span className="font-semibold text-lg">Savings Goals</span>
+              <p className="mt-1 text-[15px] text-foreground/80">
+                Define goals, track contributions, and celebrate milestones
+                on your journey to financial freedom.
+              </p>
+            </div>
+            <div className="flex flex-col rounded-xl border px-5 py-6">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                <TrendingUp className="size-5 text-primary" />
+              </div>
+              <span className="font-semibold text-lg">AI Advice</span>
+              <p className="mt-1 text-[15px] text-foreground/80">
+                Get personalized, non-judgmental tips based on your actual
+                spending patterns, not generic advice.
+              </p>
+            </div>
           </div>
         </div>
       </section>

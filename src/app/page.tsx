@@ -8,6 +8,8 @@ import {
   BarChart3,
   MessageSquare,
   ArrowRight,
+  ArrowUpRight,
+  CirclePlay,
   Star,
   TrendingUp,
   Shield,
@@ -34,32 +36,44 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 sm:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Badge variant="secondary" className="mb-4 text-sm px-4 py-1">
-            AI-Powered Finance Assistant
-          </Badge>
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight mb-6 font-serif">
-            Take Control of Your
-            <span className="text-primary block mt-2">Financial Future</span>
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            Log expenses in plain English, track budgets effortlessly, and get
-            personalized advice. All through a simple chat interface powered by AI.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/chat">
-              <Button size="lg" className="text-lg px-8 py-6">
-                Start for Free
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <a href="#features">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                See How It Works
-              </Button>
-            </a>
+      <section className="flex min-h-[calc(100vh-4rem)] items-center justify-center">
+        <div className="mx-auto grid w-full max-w-7xl gap-12 px-6 py-12 lg:grid-cols-2">
+          <div>
+            <Badge
+              asChild
+              className="rounded-full border-border py-1"
+              variant="secondary"
+            >
+              <Link href="#">
+                AI-Powered Finance Assistant <ArrowUpRight className="ml-1 size-4" />
+              </Link>
+            </Badge>
+            <h1 className="mt-6 max-w-[17ch] font-semibold text-4xl leading-[1.2]! tracking-[-0.035em] font-serif md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem]">
+              Take Control of Your{" "}
+              <span className="text-primary">Financial Future</span>
+            </h1>
+            <p className="mt-6 max-w-[60ch] text-foreground/80 sm:text-lg">
+              Log expenses in plain English, track budgets effortlessly, and get
+              personalized advice. All through a simple chat interface powered by AI.
+            </p>
+            <div className="mt-12 flex items-center gap-4">
+              <Link href="/chat">
+                <Button className="rounded-full text-base" size="lg">
+                  Start for Free <ArrowUpRight className="h-5! w-5!" />
+                </Button>
+              </Link>
+              <a href="#features">
+                <Button
+                  className="rounded-full text-base shadow-none"
+                  size="lg"
+                  variant="outline"
+                >
+                  <CirclePlay className="h-5! w-5!" /> See How It Works
+                </Button>
+              </a>
+            </div>
           </div>
+          <div className="aspect-video w-full rounded-xl bg-accent" />
         </div>
       </section>
 

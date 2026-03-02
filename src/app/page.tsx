@@ -8,11 +8,9 @@ import {
   PiggyBank,
   BarChart3,
   MessageSquare,
-  ArrowRight,
   ArrowUpRight,
   CirclePlay,
   TrendingUp,
-  Shield,
 } from "lucide-react";
 
 export default function LandingPage() {
@@ -163,26 +161,27 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <Shield className="h-12 w-12 mx-auto mb-6 opacity-80" />
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-serif">
-            Ready to Take Control?
-          </h2>
-          <p className="text-lg opacity-90 mb-8 max-w-xl mx-auto">
-            Start chatting with FinBot today. No credit card required, no complex
-            setup. Just smart money management.
-          </p>
-          <Link href="/chat">
-            <Button
-              size="lg"
-              variant="secondary"
-              className="text-lg px-8 py-6"
-            >
-              Get Started Now
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl bg-gradient-to-r from-primary via-primary/80 to-emerald-400 p-8 md:p-12 lg:p-16 shadow-2xl">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-serif text-primary-foreground">
+              Ready to Take Control?
+            </h2>
+            <p className="text-lg text-primary-foreground/90 mb-8 max-w-xl">
+              Start chatting with FinBot today. No credit card required, no complex
+              setup. Just smart money management.
+            </p>
+            <Link href="/chat">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="rounded-full text-base"
+              >
+                Get Started Now
+                <ArrowUpRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

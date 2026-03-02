@@ -87,7 +87,7 @@ export default function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="flex min-h-screen items-center justify-center py-12 bg-muted/50">
+      <section id="features" className="py-20 bg-muted/50">
         <div>
           <h2 className="text-center font-semibold text-4xl tracking-tight font-serif sm:text-5xl">
             Everything You Need to Manage Your Money

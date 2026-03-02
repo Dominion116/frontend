@@ -23,7 +23,7 @@ const testimonials = [
       "I never tracked expenses before because it was too tedious. With FinBot, " +
       "I just type what I spent and it's done. Saved $400 in my first month!",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=500&fit=crop",
+    image: "/images/testimonial.jpg",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const testimonials = [
       "The budget alerts are a game-changer. FinBot warned me I was " +
       "overspending on dining out, gently and without judgment. That's exactly what I needed.",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop",
+    image: "/images/testimonial.jpg",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const testimonials = [
       "I set a savings goal for a vacation and FinBot kept me motivated " +
       "every step of the way. Hit my target two weeks early!",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop",
+    image: "/images/testimonial.jpg",
   },
 ];
 

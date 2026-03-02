@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { StarIcon } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Carousel,
   type CarouselApi,
@@ -21,6 +22,8 @@ const testimonials = [
     testimonial:
       "I never tracked expenses before because it was too tedious. With FinBot, " +
       "I just type what I spent and it's done. Saved $400 in my first month!",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=500&fit=crop",
   },
   {
     id: 2,
@@ -29,6 +32,8 @@ const testimonials = [
     testimonial:
       "The budget alerts are a game-changer. FinBot warned me I was " +
       "overspending on dining out, gently and without judgment. That's exactly what I needed.",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop",
   },
   {
     id: 3,
@@ -37,6 +42,8 @@ const testimonials = [
     testimonial:
       "I set a savings goal for a vacation and FinBot kept me motivated " +
       "every step of the way. Hit my target two weeks early!",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop",
   },
 ];
 
@@ -60,14 +67,14 @@ const Testimonials = () => {
 
   return (
     <section className="py-20">
-      <div className="w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center font-semibold text-4xl tracking-tight font-serif sm:text-5xl">
           Loved by People Who Love Their Money
         </h2>
         <p className="mt-3 text-center text-muted-foreground text-lg">
           Join thousands already taking control of their finances.
         </p>
-        <div className="container mx-auto mt-14 w-full px-12 lg:max-w-4xl xl:max-w-5xl">
+        <div className="mt-14 w-full">
           <Carousel setApi={setApi}>
             <CarouselContent>
               {testimonials.map((testimonial) => (
@@ -103,7 +110,13 @@ const TestimonialCard = ({
 }) => (
   <div className="mb-8 rounded-xl bg-accent px-6 py-8 sm:py-6">
     <div className="flex items-center justify-between gap-20">
-      <div className="relative hidden aspect-3/4 w-full max-w-[18rem] shrink-0 rounded-xl bg-muted-foreground/20 lg:block">
+      <div className="relative hidden aspect-3/4 w-full max-w-[18rem] shrink-0 rounded-xl overflow-hidden lg:block">
+        <Image
+          src={testimonial.image}
+          alt={testimonial.name}
+          fill
+          className="object-cover"
+        />
         <div className="absolute top-1/4 right-0 flex h-12 w-12 translate-x-1/2 items-center justify-center rounded-full bg-primary">
           <svg
             className="h-6 w-6"
@@ -124,6 +137,7 @@ const TestimonialCard = ({
         <div className="flex items-center justify-between gap-1">
           <div className="hidden items-center gap-4 sm:flex md:hidden">
             <Avatar className="h-8 w-8 md:h-10 md:w-10">
+              <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
               <AvatarFallback className="bg-primary font-medium text-primary-foreground text-xl">
                 {testimonial.name.charAt(0)}
               </AvatarFallback>
@@ -146,6 +160,7 @@ const TestimonialCard = ({
         </p>
         <div className="mt-6 flex items-center gap-4 sm:hidden md:flex">
           <Avatar>
+            <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
             <AvatarFallback className="bg-primary font-medium text-primary-foreground text-xl">
               {testimonial.name.charAt(0)}
             </AvatarFallback>

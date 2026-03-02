@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -72,7 +73,15 @@ export default function LandingPage() {
               </a>
             </div>
           </div>
-          <div className="aspect-video w-full rounded-xl bg-accent" />
+          <div className="aspect-video w-full rounded-xl bg-accent overflow-hidden relative">
+            <Image
+              src="/images/heroimage.avif"
+              alt="FinBot Dashboard Preview"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
       </section>
 

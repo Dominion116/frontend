@@ -67,7 +67,7 @@ export default function LandingPage() {
                   size="lg"
                   variant="outline"
                 >
-                  <CirclePlay className="h-5! w-5!" /> See How It Works
+                  <CirclePlay className="h-5! w-5! mr-2" /> See How It Works
                 </Button>
               </a>
             </div>

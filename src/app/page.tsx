@@ -26,7 +26,7 @@ export default function LandingPage() {
             <div className="flex items-center gap-2">
               <DarkModeToggle />
               <Link href="/chat">
-                <Button>Get Started</Button>
+                <Button className="rounded-full">Get Started</Button>
               </Link>
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function LandingPage() {
             <Link href="/chat">
               <Button
                 size="lg"
-                variant="secondary"
+                variant="outline"
                 className="rounded-full text-base"
               >
                 Get Started Now

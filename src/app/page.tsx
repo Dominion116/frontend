@@ -175,7 +175,7 @@ export default function LandingPage() {
               <Button
                 size="lg"
                 variant="secondary"
-                className="text-base"
+                className="rounded-full text-base"
               >
                 Get Started Now
                 <ArrowUpRight className="ml-2 h-5 w-5" />
